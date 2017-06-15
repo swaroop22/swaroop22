@@ -1,0 +1,143 @@
+<!--<?php if (isset($_POST[ "submit"])) { $name=$ _POST[ 'name']; $email=$ _POST[ 'email']; $message=$ _POST[ 'message']; $human=i ntval($_POST[ 'human']); $from='Demo Contact Form' ; $to='example@domain.com' ; $subject='Message from Contact Demo ' ; $body="From: $name\n E-Mail: $email\n Message:\n $message" ; // Check if name has been entered if (!$_POST[ 'name']) { $errName='Please enter your name' ; } // Check if email has been entered and is valid if (!$_POST[ 'email'] || !filter_var($_POST[ 'email'], FILTER_VALIDATE_EMAIL)) { $errEmail='Please enter a valid email address' ; } //Check if message has been entered if (!$_POST[ 'message']) { $errMessage='Please enter your message' ; } // If there are no errors, send the email if (!$errName && !$errEmail && !$errMessage && !$errHuman) { if (mail ($to, $subject, $body, $from)) { $result='<div class="alert alert-success">Thank You! I will be in touch</div>' ; } else { $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>' ; } } } ?>-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favico.ico">
+
+    <title>Swaroop Krishna| UI/UX Designer</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet/less" type="text/css" href="assets/less/styles.less" />
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!-- Static navbar -->
+    <div class="fontAleg otherNavbar">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+            <!--        <div class="navbar fontAleg mainFileNavbar" role="navigation">-->
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand centered" href="index.html">SWAROOP KRISHNA<p class="roboto400"style="font-size:15px;color:#90A4AE;letter-spacing:0.6px;margin-top:5px">
+                        UI/UX Designer
+                    </p></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="about.html">About</a>
+                        </li>
+                        <li><a href="work.html">Work</a>
+                        </li>
+                        <li><a class="active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+
+    <div id="contactwrap">
+        <div class="container">
+
+            <div class="row mt centered">
+                <h1 style="margin-top:70px;letter-spacing:2px; font-size:50px;" class="centered">Get In Touch</h1> </div>
+
+            <div class="centered">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-12">
+                    <p class="roboto300 bigWord3 mt">Feel free to contact me with work inquiries, collaborations, speaking requests, general questions, or just to say hello.</p>
+                    <p class="roboto300 bigWord3 mt20">
+                        For important discussion, you can call or mail me directly.
+                    </p>
+                    <p class="roboto500 bigWord3 mt20">
+                        (732)-825-6835
+                    </p>
+                    <p class="roboto500 bigWord3 mt20">
+                        swaroopkrishnaui@gmail.com
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div id="footerwrap">
+        <div class="container">
+            <div class="row centered">
+                <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-lg-8 col-md-8 col-sm-8 col-xs-8 mb20">
+                    <!--
+                    <p class="mb20">
+    <h3 style="color:#9E9E9E">You can find me almost everywhere.</h3>
+</p>
+-->
+                    <br>
+                    <div id="navcontainer" class="mt">
+                        <ul>
+                            <li id="behance">
+                                <a target="_blank" href=""><i class="fa fa-behance fa-1x"></i></a>
+                            </li>
+
+                            <li id="facebook">
+                                <a target="_blank" href=""><i class="fa fa-facebook fa-1x"></i></a>
+                            </li>
+
+                            <li id="twitter">
+                                <a target="_blank" href=""><i class="fa fa-twitter fa-1x"></i></a>
+                            </li>
+
+                            <li id="likedin">
+                                <a target="_blank" href=""><i class="fa fa-linkedin fa-1x"></i></a>
+                            </li>
+
+                            <li id="instagram">
+                                <a target="_blank" href=""><i class="fa fa-instagram fa-1x"></i></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <p class="mb10 mt" style="color:#9E9E9E; font-size:12px;">Designed and Developed with :)</p>
+                    <p class="mt10" style="color:#9E9E9E; font-size:12px;">&copy; 2017 Swaroop Krishna</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--/footerwrap -->
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/style.js"></script>
+
+
+</body>
+
+</html>
